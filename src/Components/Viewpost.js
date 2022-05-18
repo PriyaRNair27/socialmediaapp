@@ -614,16 +614,24 @@ const Viewpost = () => {
                     <div className="row g-3">
                     {viewlist.map((value,key)=>
                     {
-                        return<div className="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                        <div class="card">
-     
-  <div class="card-body">
- <center><img src="https://assets-global.website-files.com/5bcb5ee81fb2091a2ec550c7/61319b4cecce33eb51beb316_Free%20DrawKit%203D%20Social%20Media%20Icons%20Display%20-%202-min.png" class="card-img-top" alt="..."/></center>
-    <p class="card-text"><b>TITLE</b>{value.title}</p>
-    <p class="card-text"><b>BODY</b>{value.body}</p>
-    
+                        return<div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <div class="card mb-3" >
+    <div class="row g-0">
+      <div class="col-md-4">
+      <center><img  style={{width:250,height:250}}src="https://assets-global.website-files.com/5bcb5ee81fb2091a2ec550c7/61319b4cecce33eb51beb316_Free%20DrawKit%203D%20Social%20Media%20Icons%20Display%20-%202-min.png" class="card-img-top" alt="..."/></center>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+        
+      <p class="card-text"> <b>{value.title}</b></p>
+      <p class="card-text">{value.body}</p>
+      
+      
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+
 </div>
 
                     })}
