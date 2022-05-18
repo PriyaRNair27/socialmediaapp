@@ -21,7 +21,7 @@ const Header = () => {
          <Link className="nav-link" to="/search">SEARCH POST</Link>
         </li>
         <li className="nav-item">
-         <Link className="nav-link" to="/">VIEW POST</Link>
+         <Link className="nav-link" to="/view">VIEW POST</Link>
         </li>
       </ul>
     </div>
